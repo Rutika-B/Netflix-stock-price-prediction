@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import APIService from "./components/APIservice";
+import LiveChart from "./components/LiveChart";
 
 function App() {
   const [open, setOpen] = useState(0);
@@ -75,6 +76,8 @@ function App() {
           <input type="submit" value="submit" />
         </form>
         <h3>{prediction}</h3>
+        <h1>stock candlestick chart</h1>
+        <LiveChart Symbol={"IBM"} />
       </header>
     </div>
   );
