@@ -108,7 +108,7 @@ function App() {
           </div>
 
           
-          {/* <LiveChart symbol={"IBM"} /> */}
+          <LiveChart symbol={"IBM"} />
         </div>
       </div>
     </>
